@@ -1,0 +1,68 @@
+"SAGDP10N Per capita real GDP by state"
+"Per capita real GDP by state (Chained 2012 dollars) 1/" 
+"Bureau of Economic Analysis" 
+"State or DC"
+"GeoFips","GeoName","2019"
+"00000","United States",58107
+"01000","Alabama",41389
+"02000","Alaska",74422
+"04000","Arizona",44161
+"05000","Arkansas",39580
+"06000","California",70662
+"08000","Colorado",61311
+"09000","Connecticut",69789
+"10000","Delaware",64985
+"11000","District of Columbia",178442
+"12000","Florida",44267
+"13000","Georgia",50816
+"15000","Hawaii",58981
+"16000","Idaho",40566
+"17000","Illinois",61713
+"18000","Indiana",49321
+"19000","Iowa",55051
+"20000","Kansas",53528
+"21000","Kentucky",42386
+"22000","Louisiana",51729
+"23000","Maine",43541
+"24000","Maryland",61926
+"25000","Massachusetts",75258
+"26000","Michigan",47448
+"27000","Minnesota",60066
+"28000","Mississippi",35015
+"29000","Missouri",47407
+"30000","Montana",44145
+"31000","Nebraska",59386
+"32000","Nevada",50043
+"33000","New Hampshire",57272
+"34000","New Jersey",63492
+"35000","New Mexico",46304
+"36000","New York",75131
+"37000","North Carolina",48496
+"38000","North Dakota",70991
+"39000","Ohio",52664
+"40000","Oklahoma",50876
+"41000","Oregon",52726
+"42000","Pennsylvania",56868
+"44000","Rhode Island",51963
+"45000","South Carolina",41457
+"46000","South Dakota",52913
+"47000","Tennessee",48440
+"48000","Texas",61682
+"49000","Utah",51407
+"50000","Vermont",48855
+"51000","Virginia",56938
+"53000","Washington",69761
+"54000","West Virginia",40265
+"55000","Wisconsin",52534
+"56000","Wyoming",67915
+"91000","New England",66650
+"92000","Mideast",67882
+"93000","Great Lakes",53503
+"94000","Plains",54856
+"95000","Southeast",46640
+"96000","Southwest",56926
+"97000","Rocky Mountain",54646
+"98000","Far West",67849
+"Legend / Footnotes:"
+"1/ Per capita real GDP statistics for 2010-2019 reflect Census Bureau midyear population estimates available as of December 2019."
+"Last updated: April 7, 2020-- new statistics for 2019; revised statistics for 2010-2018."

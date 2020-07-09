@@ -1,0 +1,113 @@
+"SARPI Real Personal Income by state 1/"
+"(Millions of chained 2012 dollars)" 
+"Bureau of Economic Analysis" 
+"State or DC"
+"GeoFips","GeoName","LineCode","Description","2018"
+"00000","United States","1","Real personal income (millions of chained (2012) dollars)",16471691.8
+"00000","United States","2","Real per capita personal income (chained (2012) dollars) 2/",50420
+"01000","Alabama","1","Real personal income (millions of chained (2012) dollars)",221887.2
+"01000","Alabama","2","Real per capita personal income (chained (2012) dollars) 2/",45397
+"02000","Alaska","1","Real personal income (millions of chained (2012) dollars)",38826.8
+"02000","Alaska","2","Real per capita personal income (chained (2012) dollars) 2/",52816
+"04000","Arizona","1","Real personal income (millions of chained (2012) dollars)",305947.3
+"04000","Arizona","2","Real per capita personal income (chained (2012) dollars) 2/",42742
+"05000","Arkansas","1","Real personal income (millions of chained (2012) dollars)",141932.1
+"05000","Arkansas","2","Real per capita personal income (chained (2012) dollars) 2/",47158
+"06000","California","1","Real personal income (millions of chained (2012) dollars)",2023347.3
+"06000","California","2","Real per capita personal income (chained (2012) dollars) 2/",51274
+"08000","Colorado","1","Real personal income (millions of chained (2012) dollars)",303432.3
+"08000","Colorado","2","Real per capita personal income (chained (2012) dollars) 2/",53315
+"09000","Connecticut","1","Real personal income (millions of chained (2012) dollars)",239213.9
+"09000","Connecticut","2","Real per capita personal income (chained (2012) dollars) 2/",66978
+"10000","Delaware","1","Real personal income (millions of chained (2012) dollars)",47729.5
+"10000","Delaware","2","Real per capita personal income (chained (2012) dollars) 2/",49436
+"11000","District of Columbia","1","Real personal income (millions of chained (2012) dollars)",46089.7
+"11000","District of Columbia","2","Real per capita personal income (chained (2012) dollars) 2/",65697
+"12000","Florida","1","Real personal income (millions of chained (2012) dollars)",984580.1
+"12000","Florida","2","Real per capita personal income (chained (2012) dollars) 2/",46346
+"13000","Georgia","1","Real personal income (millions of chained (2012) dollars)",488463.1
+"13000","Georgia","2","Real per capita personal income (chained (2012) dollars) 2/",46471
+"15000","Hawaii","1","Real personal income (millions of chained (2012) dollars)",61930.6
+"15000","Hawaii","2","Real per capita personal income (chained (2012) dollars) 2/",43595
+"16000","Idaho","1","Real personal income (millions of chained (2012) dollars)",77362.0
+"16000","Idaho","2","Real per capita personal income (chained (2012) dollars) 2/",44193
+"17000","Illinois","1","Real personal income (millions of chained (2012) dollars)",685680.0
+"17000","Illinois","2","Real per capita personal income (chained (2012) dollars) 2/",53893
+"18000","Indiana","1","Real personal income (millions of chained (2012) dollars)",328057.2
+"18000","Indiana","2","Real per capita personal income (chained (2012) dollars) 2/",48997
+"19000","Iowa","1","Real personal income (millions of chained (2012) dollars)",164635.2
+"19000","Iowa","2","Real per capita personal income (chained (2012) dollars) 2/",52288
+"20000","Kansas","1","Real personal income (millions of chained (2012) dollars)",154667.2
+"20000","Kansas","2","Real per capita personal income (chained (2012) dollars) 2/",53125
+"21000","Kentucky","1","Real personal income (millions of chained (2012) dollars)",200569.4
+"21000","Kentucky","2","Real per capita personal income (chained (2012) dollars) 2/",44959
+"22000","Louisiana","1","Real personal income (millions of chained (2012) dollars)",224496.4
+"22000","Louisiana","2","Real per capita personal income (chained (2012) dollars) 2/",48178
+"23000","Maine","1","Real personal income (millions of chained (2012) dollars)",60768.1
+"23000","Maine","2","Real per capita personal income (chained (2012) dollars) 2/",45381
+"24000","Maryland","1","Real personal income (millions of chained (2012) dollars)",328105.7
+"24000","Maryland","2","Real per capita personal income (chained (2012) dollars) 2/",54360
+"25000","Massachusetts","1","Real personal income (millions of chained (2012) dollars)",418917.9
+"25000","Massachusetts","2","Real per capita personal income (chained (2012) dollars) 2/",60866
+"26000","Michigan","1","Real personal income (millions of chained (2012) dollars)",486642.1
+"26000","Michigan","2","Real per capita personal income (chained (2012) dollars) 2/",48742
+"27000","Minnesota","1","Real personal income (millions of chained (2012) dollars)",307540.0
+"27000","Minnesota","2","Real per capita personal income (chained (2012) dollars) 2/",54857
+"28000","Mississippi","1","Real personal income (millions of chained (2012) dollars)",122002.9
+"28000","Mississippi","2","Real per capita personal income (chained (2012) dollars) 2/",40927
+"29000","Missouri","1","Real personal income (millions of chained (2012) dollars)",305950.4
+"29000","Missouri","2","Real per capita personal income (chained (2012) dollars) 2/",49979
+"30000","Montana","1","Real personal income (millions of chained (2012) dollars)",50282.6
+"30000","Montana","2","Real per capita personal income (chained (2012) dollars) 2/",47407
+"31000","Nebraska","1","Real personal income (millions of chained (2012) dollars)",106597.9
+"31000","Nebraska","2","Real per capita personal income (chained (2012) dollars) 2/",55358
+"32000","Nevada","1","Real personal income (millions of chained (2012) dollars)",142193.7
+"32000","Nevada","2","Real per capita personal income (chained (2012) dollars) 2/",46970
+"33000","New Hampshire","1","Real personal income (millions of chained (2012) dollars)",72859.9
+"33000","New Hampshire","2","Real per capita personal income (chained (2012) dollars) 2/",53832
+"34000","New Jersey","1","Real personal income (millions of chained (2012) dollars)",490275.7
+"34000","New Jersey","2","Real per capita personal income (chained (2012) dollars) 2/",55174
+"35000","New Mexico","1","Real personal income (millions of chained (2012) dollars)",88922.3
+"35000","New Mexico","2","Real per capita personal income (chained (2012) dollars) 2/",42491
+"36000","New York","1","Real personal income (millions of chained (2012) dollars)",1070638.3
+"36000","New York","2","Real per capita personal income (chained (2012) dollars) 2/",54819
+"37000","North Carolina","1","Real personal income (millions of chained (2012) dollars)",484300.9
+"37000","North Carolina","2","Real per capita personal income (chained (2012) dollars) 2/",46650
+"38000","North Dakota","1","Real personal income (millions of chained (2012) dollars)",43216.9
+"38000","North Dakota","2","Real per capita personal income (chained (2012) dollars) 2/",57008
+"39000","Ohio","1","Real personal income (millions of chained (2012) dollars)",598401.7
+"39000","Ohio","2","Real per capita personal income (chained (2012) dollars) 2/",51249
+"40000","Oklahoma","1","Real personal income (millions of chained (2012) dollars)",191625.0
+"40000","Oklahoma","2","Real per capita personal income (chained (2012) dollars) 2/",48633
+"41000","Oregon","1","Real personal income (millions of chained (2012) dollars)",195792.0
+"41000","Oregon","2","Real per capita personal income (chained (2012) dollars) 2/",46819
+"42000","Pennsylvania","1","Real personal income (millions of chained (2012) dollars)",685698.8
+"42000","Pennsylvania","2","Real per capita personal income (chained (2012) dollars) 2/",53566
+"44000","Rhode Island","1","Real personal income (millions of chained (2012) dollars)",54248.7
+"44000","Rhode Island","2","Real per capita personal income (chained (2012) dollars) 2/",51261
+"45000","South Carolina","1","Real personal income (millions of chained (2012) dollars)",226401.8
+"45000","South Carolina","2","Real per capita personal income (chained (2012) dollars) 2/",44531
+"46000","South Dakota","1","Real personal income (millions of chained (2012) dollars)",48659.5
+"46000","South Dakota","2","Real per capita personal income (chained (2012) dollars) 2/",55377
+"47000","Tennessee","1","Real personal income (millions of chained (2012) dollars)",328024.0
+"47000","Tennessee","2","Real per capita personal income (chained (2012) dollars) 2/",48441
+"48000","Texas","1","Real personal income (millions of chained (2012) dollars)",1386862.3
+"48000","Texas","2","Real per capita personal income (chained (2012) dollars) 2/",48443
+"49000","Utah","1","Real personal income (millions of chained (2012) dollars)",140704.9
+"49000","Utah","2","Real per capita personal income (chained (2012) dollars) 2/",44618
+"50000","Vermont","1","Real personal income (millions of chained (2012) dollars)",30594.1
+"50000","Vermont","2","Real per capita personal income (chained (2012) dollars) 2/",49001
+"51000","Virginia","1","Real personal income (millions of chained (2012) dollars)",448049.5
+"51000","Virginia","2","Real per capita personal income (chained (2012) dollars) 2/",52704
+"53000","Washington","1","Real personal income (millions of chained (2012) dollars)",402539.1
+"53000","Washington","2","Real per capita personal income (chained (2012) dollars) 2/",53502
+"54000","West Virginia","1","Real personal income (millions of chained (2012) dollars)",78067.5
+"54000","West Virginia","2","Real per capita personal income (chained (2012) dollars) 2/",43268
+"55000","Wisconsin","1","Real personal income (millions of chained (2012) dollars)",303039.6
+"55000","Wisconsin","2","Real per capita personal income (chained (2012) dollars) 2/",52182
+"56000","Wyoming","1","Real personal income (millions of chained (2012) dollars)",34920.8
+"56000","Wyoming","2","Real per capita personal income (chained (2012) dollars) 2/",60458
+"Legend / Footnotes:"
+"1/ Real personal income for states is personal income divided by the RPPs and the national PCE price index. The result is a chained dollar (using 2012 as the base year) estimate of real personal income. Calculations are performed on unrounded data."
+"2/ Real per capita personal income is total real personal income divided by total midyear population."
+"Last updated: May 18, 2020-- new statistics for 2018; revised statistics for 2010-2017. Real per capita personal income was revised 2010-2017."
