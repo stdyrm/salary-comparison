@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/salary-comparison/static/css/main.2a2f6aa1.chunk.css",
+    "main.js": "/salary-comparison/static/js/main.66701211.chunk.js",
+    "main.js.map": "/salary-comparison/static/js/main.66701211.chunk.js.map",
+    "runtime-main.js": "/salary-comparison/static/js/runtime-main.74e55447.js",
+    "runtime-main.js.map": "/salary-comparison/static/js/runtime-main.74e55447.js.map",
+    "static/js/2.0a331068.chunk.js": "/salary-comparison/static/js/2.0a331068.chunk.js",
+    "static/js/2.0a331068.chunk.js.map": "/salary-comparison/static/js/2.0a331068.chunk.js.map",
+    "index.html": "/salary-comparison/index.html",
+    "precache-manifest.c306d545252b7abc4f040feb54a7c303.js": "/salary-comparison/precache-manifest.c306d545252b7abc4f040feb54a7c303.js",
+    "service-worker.js": "/salary-comparison/service-worker.js",
+    "static/css/main.2a2f6aa1.chunk.css.map": "/salary-comparison/static/css/main.2a2f6aa1.chunk.css.map",
+    "static/js/2.0a331068.chunk.js.LICENSE.txt": "/salary-comparison/static/js/2.0a331068.chunk.js.LICENSE.txt",
+    "static/media/bea_real_personal_income_2018.csv": "/salary-comparison/static/media/bea_real_personal_income_2018.e97877bb.csv",
+    "static/media/bea_regional_price_parities_2018.csv": "/salary-comparison/static/media/bea_regional_price_parities_2018.247183a6.csv",
+    "static/media/state_M2019_dl.csv": "/salary-comparison/static/media/state_M2019_dl.e8b735dc.csv"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.74e55447.js",
+    "static/js/2.0a331068.chunk.js",
+    "static/css/main.2a2f6aa1.chunk.css",
+    "static/js/main.66701211.chunk.js"
+  ]
+}
