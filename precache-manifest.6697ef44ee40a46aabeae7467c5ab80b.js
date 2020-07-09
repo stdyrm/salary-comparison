@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f001d3f93baec02d73496422a55ed3b5",
+    "revision": "78729bcd022652671bc703eaa3512a4a",
     "url": "/salary-comparison/index.html"
   },
   {
-    "revision": "a850f528e79614e7b510",
+    "revision": "822cf8820c6b2309a99f",
     "url": "/salary-comparison/static/css/main.2a2f6aa1.chunk.css"
   },
   {
-    "revision": "8a864648c23c040aa495",
-    "url": "/salary-comparison/static/js/2.0a331068.chunk.js"
+    "revision": "ce996776a91f48431fce",
+    "url": "/salary-comparison/static/js/2.3d19cb7c.chunk.js"
   },
   {
     "revision": "89b0379e7bcda1a468d8b0343aeb4e53",
-    "url": "/salary-comparison/static/js/2.0a331068.chunk.js.LICENSE.txt"
+    "url": "/salary-comparison/static/js/2.3d19cb7c.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "a850f528e79614e7b510",
-    "url": "/salary-comparison/static/js/main.66701211.chunk.js"
+    "revision": "822cf8820c6b2309a99f",
+    "url": "/salary-comparison/static/js/main.6bb63363.chunk.js"
   },
   {
     "revision": "d450a231070d52a42790",
