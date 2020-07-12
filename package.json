@@ -20,19 +20,12 @@
   },
   "scripts": {
     "start": "react-scripts start",
-	"build": "react-scripts build",
-	"deploy": "gh-pages -d build"
+    "build": "react-scripts build",
+		"deploy": "gh-pages -d build",
+		"format": "prettier --write \"src/**/*.js\""
   },
   "eslintConfig": {
     "extends": "react-app"
-  },
-  "prettier": {
-    "bracketSpacing": true,
-    "tabs": true,
-    "tabWidth": 4,
-    "semicolons": true,
-    "arrowParens": "avoid",
-    "trailingComma": "es5"
   },
   "browserslist": {
     "production": [
@@ -48,6 +41,7 @@
   },
   "devDependencies": {
     "@testing-library/react": "^9.5.0",
+    "prettier": "^2.0.5",
     "react-test-renderer": "^16.13.1"
   }
 }

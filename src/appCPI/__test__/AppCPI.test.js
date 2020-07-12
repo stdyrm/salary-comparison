@@ -1,10 +1,8 @@
-import React from 'react';
+import React from "react";
 import ReactDOM from "react-dom";
 
 // component
 import { AppCPI } from "../AppCPI";
-import { interpolate } from 'd3';
+import { interpolate } from "d3";
 
-it("renders without crashing", () => {
-	
-})
+it("renders without crashing", () => {});

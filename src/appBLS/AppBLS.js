@@ -8,7 +8,11 @@ import { PARAMS_HEATMAP } from "../params";
 import { Navbar, SideDrawer } from "../Components/nav";
 import { FilterInterface, Selections } from "../Components/selectors";
 import { ChartBLS } from "./ChartBLS";
-import { ChartControl, ChartControlRadio, ChartControlSelector } from "../Components/controls";
+import {
+  ChartControl,
+  ChartControlRadio,
+  ChartControlSelector,
+} from "../Components/controls";
 import AboutBLS from "./AboutBLS";
 
 //hooks
@@ -26,138 +30,138 @@ import { makeStyles } from "@material-ui/core/styles";
 
 const drawerWidth = 240;
 
-const useStyles = makeStyles((theme) => ({
-	rootDiv: {
-		[theme.breakpoints.up("lg")]: {
-			paddingLeft: drawerWidth,
-		}
-	},
-	sideDrawer: {},
-	sectionTitle: {
-		paddingTop: theme.spacing(4),
-		fontWeight: 700,
-		fontSize: "1.5rem",
-	},
-	drawerSection: {
-		paddingLeft: theme.spacing(2),
-	},	
-	deselectButton: {
-		color: "red",
-	},
+const useStyles = makeStyles(theme => ({
+  rootDiv: {
+    [theme.breakpoints.up("lg")]: {
+      paddingLeft: drawerWidth,
+    },
+  },
+  sideDrawer: {},
+  sectionTitle: {
+    paddingTop: theme.spacing(4),
+    fontWeight: 700,
+    fontSize: "1.5rem",
+  },
+  drawerSection: {
+    paddingLeft: theme.spacing(2),
+  },
+  deselectButton: {
+    color: "red",
+  },
 }));
 
 const filterList = PARAMS_HEATMAP.FILTER_LIST;
 
 const AppBLS = () => {
-	const dataRaw = useData(dataBLS);
+  const dataRaw = useData(dataBLS);
 
-	const [data, setData] = useState(null);
-	const [mobileOpen, setMobileOpen] = useState(false);
-	const [chartParams, setChartParams] = useState(PARAMS_HEATMAP.CHART);
+  const [data, setData] = useState(null);
+  const [mobileOpen, setMobileOpen] = useState(false);
+  const [chartParams, setChartParams] = useState(PARAMS_HEATMAP.CHART);
 
-	const [filters, setFilters] = useState([]);
-	const [filterSettings, setFilterSettings] = useState({
-		operator: "AND",
-		n: 12,
-	});
-	const filteredSelection = useFilters(filters);
-	const [selected, setSelected] = useState([]);
+  const [filters, setFilters] = useState([]);
+  const [filterSettings, setFilterSettings] = useState({
+    operator: "AND",
+    n: 12,
+  });
+  const filteredSelection = useFilters(filters);
+  const [selected, setSelected] = useState([]);
 
-	const classes = useStyles();
-	
-	const handleDrawer = () => {
-		setMobileOpen(!mobileOpen);
-	};
+  const classes = useStyles();
 
-    const cleanData = async data => {
-        const dataNoTerritories = data.filter(
-            d =>
-                d.area_title !== "Virgin Islands" &&
-                d.area_title !== "Puerto Rico" &&
-                d.area_title !== "Guam"
-        );
-        const dataMajorOccupations = dataNoTerritories.filter(
-            d => d.o_group === "major"
-		);
-		return dataMajorOccupations;
-	};
+  const handleDrawer = () => {
+    setMobileOpen(!mobileOpen);
+  };
 
-	const cleanRPPData = async data => {
-		return d3.text(data)
-			.then(res => {
-				return d3.csvParse(res.split("\n").slice(4).join("\n"), d => {
-					return {
-						GeoFips: +d.GeoFips,
-						GeoName: d.GeoName,
-						LineCode: +d.LineCode,
-						Description: d.Description,
-						"2018": +d["2018"],
-					}
-				});
-			})
-			.then(res => {
-				return res.filter(d => d.Description === "RPPs: All items");
-			});
-	};
+  const cleanData = async data => {
+    const dataNoTerritories = data.filter(
+      d =>
+        d.area_title !== "Virgin Islands" &&
+        d.area_title !== "Puerto Rico" &&
+        d.area_title !== "Guam"
+    );
+    const dataMajorOccupations = dataNoTerritories.filter(
+      d => d.o_group === "major"
+    );
+    return dataMajorOccupations;
+  };
 
-	const transformData = async (data, dataRPP) => {
-		const rpp = await cleanRPPData(dataRPP);
-		const majorOcc = await cleanData(data);
+  const cleanRPPData = async data => {
+    return d3
+      .text(data)
+      .then(res => {
+        return d3.csvParse(res.split("\n").slice(4).join("\n"), d => {
+          return {
+            GeoFips: +d.GeoFips,
+            GeoName: d.GeoName,
+            LineCode: +d.LineCode,
+            Description: d.Description,
+            "2018": +d["2018"],
+          };
+        });
+      })
+      .then(res => {
+        return res.filter(d => d.Description === "RPPs: All items");
+      });
+  };
 
-		let revisedData = [];
+  const transformData = async (data, dataRPP) => {
+    const rpp = await cleanRPPData(dataRPP);
+    const majorOcc = await cleanData(data);
 
-		majorOcc.forEach(row => {
-			const stateName = row.area_title;
-			const realSalary = row.a_median;
-			const stateRPP = rpp.filter(d => d.GeoName === stateName)[0]["2018"];
+    let revisedData = [];
 
-			row["RPP_a_median"] = (realSalary / stateRPP * 100);
-			revisedData.push(row);
-		});
-		return revisedData;
-	};
+    majorOcc.forEach(row => {
+      const stateName = row.area_title;
+      const realSalary = row.a_median;
+      const stateRPP = rpp.filter(d => d.GeoName === stateName)[0]["2018"];
 
-	useEffect(() => {
-		let mounted = true;
-		transformData(dataRaw, dataRPP)
-			.then(res => {
-				if (mounted) {
-					setData(res)
-				}
-			});
-		
-		return () => {
-			mounted = false;
-		};
-	}, [dataRaw]);
+      row["RPP_a_median"] = (realSalary / stateRPP) * 100;
+      revisedData.push(row);
+    });
+    return revisedData;
+  };
 
-	useEffect(() => {
-		setSelected(filteredSelection);
-	}, [filteredSelection]);
+  useEffect(() => {
+    let mounted = true;
+    transformData(dataRaw, dataRPP).then(res => {
+      if (mounted) {
+        setData(res);
+      }
+    });
 
-    return (
-        <section>
-			<SelectContext.Provider value={{ selected, setSelected }}>
-				<header>
-					<Navbar handleDrawer={handleDrawer}>
-						{data 
-						&& <>
-								<ChartControl title="Chart Parameters">
-									<ChartControlRadio
-										ariaLabel="salary-type"
-										name="salary-type"
-										paramFields={chartParams.color.paramFields}
-										parameter={chartParams.color}
-										chartParams={chartParams}
-										setChartParams={setChartParams}
-									/>
-									<ChartControlSelector />
-								</ChartControl>
-							</>
-						}
-					</Navbar>
-				</header>
-				{/* <SideDrawer 
+    return () => {
+      mounted = false;
+    };
+  }, [dataRaw]);
+
+  useEffect(() => {
+    setSelected(filteredSelection);
+  }, [filteredSelection]);
+
+  return (
+    <section>
+      <SelectContext.Provider value={{ selected, setSelected }}>
+        <header>
+          <Navbar handleDrawer={handleDrawer}>
+            {data && (
+              <>
+                <ChartControl title="Chart Parameters">
+                  <ChartControlRadio
+                    ariaLabel="salary-type"
+                    name="salary-type"
+                    paramFields={chartParams.color.paramFields}
+                    parameter={chartParams.color}
+                    chartParams={chartParams}
+                    setChartParams={setChartParams}
+                  />
+                  <ChartControlSelector />
+                </ChartControl>
+              </>
+            )}
+          </Navbar>
+        </header>
+        {/* <SideDrawer 
 					mobileOpen={mobileOpen} 
 					handleDrawer={handleDrawer}
 					drawerWidth={drawerWidth}
@@ -183,11 +187,11 @@ const AppBLS = () => {
 					/>
 
 				</SideDrawer> */}
-					{data && <ChartBLS data={data} chartParams={chartParams} />}
-				<AboutBLS />
-			</SelectContext.Provider>
-        </section>
-    );
+        {data && <ChartBLS data={data} chartParams={chartParams} />}
+        <AboutBLS />
+      </SelectContext.Provider>
+    </section>
+  );
 };
 
 export { AppBLS };
